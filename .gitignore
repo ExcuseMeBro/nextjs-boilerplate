@@ -39,3 +39,7 @@ next-env.d.ts
 bun.lockb
 *.lock
 package-lock.json
+
+#editor config folders
+.vscode
+.idea
