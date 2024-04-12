@@ -10,4 +10,4 @@ bun i && bun dev
 
 - shadcn/ui 
 - tailwindcss
-- 
+- Appollo GraphQL
