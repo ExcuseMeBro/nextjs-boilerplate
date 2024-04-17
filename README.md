@@ -9,5 +9,5 @@ bun i && bun dev
 ## Using technologies
 
 - shadcn/ui 
-- tailwindcss
+- TailwindCSS
 - Appollo GraphQL
