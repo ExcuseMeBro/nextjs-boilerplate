@@ -1,12 +1,12 @@
 {
   "metadata": {
     "title": "Next.js Boilerplate",
-    "description": "REST, JWT auth, i18n, Biome va Remotion bilan ishlab chiqarishga tayyor Next.js starter."
+    "description": "REST, JWT auth, i18n, Biome va lightweight animatsiyalar bilan ishlab chiqarishga tayyor Next.js starter."
   },
   "home": {
     "badge": "Production starter",
     "title": "Tez, xavfsiz va ko‘p tilli ilova yarating.",
-    "subtitle": "REST API, JWT-ready auth, i18n, Biome, xavfsiz sozlamalar va Remotion video vositalari bilan zamonaviy Next.js boilerplate.",
+    "subtitle": "REST API, JWT-ready auth, i18n, Biome, xavfsiz sozlamalar va lightweight UI animatsiyalar bilan zamonaviy Next.js boilerplate.",
     "primaryAction": "Boshlash",
     "secondaryAction": "Health check ko‘rish",
     "stackTitle": "Ichidagi stack",
@@ -17,15 +17,15 @@
     "restDescription": "Timeout, error normalization, locale header, cache control va bearer token support bilan typed fetch wrapper.",
     "i18nTitle": "i18n tayyor",
     "i18nDescription": "English, Uzbek va Russian uchun locale routing, mos tarjimalar, metadata va language switcher.",
-    "motionTitle": "Remotion tayyor",
-    "motionDescription": "Launch clip, reklama, social post va product demo uchun video composition starter.",
     "securityTitle": "Security patch qilingan",
     "securityDescription": "Yangilangan paketlar, strict TypeScript, Biome checks, secure headers, GraphQL/Apollo yo‘q va safe defaults.",
     "performanceTitle": "Default optimizatsiya",
     "performanceDescription": "Server components, kichik client islands, strict env validation, request timeouts va package import optimization.",
     "healthCardTitle": "API health",
     "healthCardDescription": "Deploy smoke test uchun shu routedan foydalaning.",
-    "healthCardButton": "/api/health ochish"
+    "healthCardButton": "/api/health ochish",
+    "animationTitle": "Lightweight animatsiyalar",
+    "animationDescription": "Motion orqali silliq UI micro-interactionlar, kichik client-side overhead bilan."
   },
   "auth": {
     "statusTitle": "Auth session",

@@ -14,9 +14,7 @@
     "check": "biome check .",
     "check:write": "biome check --write .",
     "typecheck": "tsc --noEmit",
-    "audit": "bun audit",
-    "remotion": "remotion studio video/index.ts",
-    "render:demo": "remotion render video/index.ts boilerplate-intro out/boilerplate-intro.mp4"
+    "audit": "bun audit"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.4",
@@ -24,12 +22,12 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.14.0",
+    "motion": "^12.38.0",
     "next": "^16.2.4",
     "next-intl": "^4.11.0",
     "next-themes": "^0.4.6",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "remotion": "^4.0.456",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.5.0",
     "tailwindcss-animate": "^1.0.7",
@@ -37,7 +35,6 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.14",
-    "@remotion/cli": "^4.0.456",
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",

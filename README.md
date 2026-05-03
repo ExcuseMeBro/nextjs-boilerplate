@@ -10,7 +10,7 @@ Modern starter for real projects: secure, fast, multilingual, REST-first.
 - **i18n** with English, Uzbek, Russian routes
 - **Biome** for linting and formatting
 - **Tailwind CSS** + shadcn/ui-style components
-- **Remotion** for video animations and product demos
+- **Motion** for lightweight UI animations and micro-interactions
 - Secure headers, strict TypeScript, optimized package imports
 
 ## Quick start
@@ -59,8 +59,6 @@ bun check        # Biome lint + format check
 bun check:write  # auto-fix Biome issues
 bun typecheck    # TypeScript check
 bun audit        # dependency security audit
-bun remotion     # open Remotion Studio
-bun render:demo  # render demo video
 ```
 
 ## Project structure
@@ -75,7 +73,6 @@ lib/api               REST client
 lib/auth              auth types, cookies, session helpers
 lib/config            env validation
 messages              translation files
-video                 Remotion compositions
 ```
 
 ## Add REST calls

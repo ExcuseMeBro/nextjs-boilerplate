@@ -1,15 +1,16 @@
 import {
   ArrowRight,
   CheckCircle2,
-  Film,
   Globe2,
   LockKeyhole,
   Rocket,
   ShieldCheck,
+  Sparkles,
   Zap,
 } from "lucide-react";
 import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { AnimatedStack } from "@/components/app/animated-stack";
 import { LanguageSwitcher } from "@/components/app/language-switcher";
 import { AuthCard } from "@/components/auth/auth-card";
 import ToasterDemo from "@/components/client/ToasterDemo";
@@ -26,7 +27,7 @@ const stackItems = [
   "JWT",
   "i18n",
   "Biome",
-  "Remotion",
+  "Motion",
   "Tailwind CSS",
 ];
 
@@ -52,9 +53,9 @@ export default async function HomePage({ params }: HomePageProps) {
       description: t("i18nDescription"),
     },
     {
-      icon: Film,
-      title: t("motionTitle"),
-      description: t("motionDescription"),
+      icon: Sparkles,
+      title: t("animationTitle"),
+      description: t("animationDescription"),
     },
     {
       icon: ShieldCheck,
@@ -120,13 +121,7 @@ export default async function HomePage({ params }: HomePageProps) {
         <section className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr]" id="stack">
           <div className="rounded-3xl border bg-card p-6 shadow-sm">
             <h2 className="text-2xl font-semibold tracking-tight">{t("stackTitle")}</h2>
-            <div className="mt-6 flex flex-wrap gap-2">
-              {stackItems.map((item) => (
-                <span className="rounded-full bg-muted px-3 py-1 text-sm font-medium" key={item}>
-                  {item}
-                </span>
-              ))}
-            </div>
+            <AnimatedStack items={stackItems} />
           </div>
 
           <div className="rounded-3xl border bg-card p-6 shadow-sm">

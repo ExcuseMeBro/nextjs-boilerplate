@@ -1,12 +1,12 @@
 {
   "metadata": {
     "title": "Next.js Boilerplate",
-    "description": "Готовый к production Next.js starter с REST, JWT auth, i18n, Biome и Remotion."
+    "description": "Готовый к production Next.js starter с REST, JWT auth, i18n, Biome и легкими анимациями."
   },
   "home": {
     "badge": "Production starter",
     "title": "Создавайте быстрые, безопасные и мультиязычные приложения.",
-    "subtitle": "Современный Next.js boilerplate с REST API, JWT-ready auth, i18n, Biome, безопасными настройками и видео-инструментами Remotion.",
+    "subtitle": "Современный Next.js boilerplate с REST API, JWT-ready auth, i18n, Biome, безопасными настройками и легкими UI-анимациями.",
     "primaryAction": "Начать",
     "secondaryAction": "Проверить health check",
     "stackTitle": "Стек внутри",
@@ -17,15 +17,15 @@
     "restDescription": "Typed fetch wrapper с timeout, error normalization, locale headers, cache controls и bearer token support.",
     "i18nTitle": "i18n готов",
     "i18nDescription": "Locale routing, синхронные переводы, metadata и language switcher для English, Uzbek и Russian.",
-    "motionTitle": "Remotion готов",
-    "motionDescription": "Video composition starter для launch clips, рекламы, social posts и product demos.",
     "securityTitle": "Security patch готов",
     "securityDescription": "Обновленные пакеты, strict TypeScript, Biome checks, secure headers, без GraphQL/Apollo и с safe defaults.",
     "performanceTitle": "Оптимизация по умолчанию",
     "performanceDescription": "Server components, маленькие client islands, strict env validation, request timeouts и package import optimization.",
     "healthCardTitle": "API health",
     "healthCardDescription": "Используйте этот route как deployment smoke test.",
-    "healthCardButton": "Открыть /api/health"
+    "healthCardButton": "Открыть /api/health",
+    "animationTitle": "Легкие анимации",
+    "animationDescription": "Micro-interactions на Motion для аккуратного UI с небольшим client-side overhead."
   },
   "auth": {
     "statusTitle": "Auth session",

@@ -8,7 +8,7 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   experimental: {
-    optimizePackageImports: ["lucide-react", "sonner", "@tanstack/react-query"],
+    optimizePackageImports: ["lucide-react", "sonner", "@tanstack/react-query", "motion"],
   },
   async headers() {
     return [

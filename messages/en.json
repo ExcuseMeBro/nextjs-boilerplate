@@ -1,12 +1,12 @@
 {
   "metadata": {
     "title": "Next.js Boilerplate",
-    "description": "Production-ready Next.js starter with REST, JWT auth, i18n, Biome, and Remotion."
+    "description": "Production-ready Next.js starter with REST, JWT auth, i18n, Biome, and lightweight animations."
   },
   "home": {
     "badge": "Production starter",
     "title": "Build fast, secure, multilingual apps.",
-    "subtitle": "Modern Next.js boilerplate with REST APIs, JWT-ready auth, i18n, Biome, secure defaults, and Remotion video tooling.",
+    "subtitle": "Modern Next.js boilerplate with REST APIs, JWT-ready auth, i18n, Biome, secure defaults, and lightweight UI animations.",
     "primaryAction": "Start building",
     "secondaryAction": "View health check",
     "stackTitle": "Included stack",
@@ -17,15 +17,15 @@
     "restDescription": "Typed fetch wrapper with timeout, error normalization, locale headers, cache controls, and bearer token support.",
     "i18nTitle": "i18n built in",
     "i18nDescription": "Locale routing, aligned translations, metadata, and language switcher for English, Uzbek, and Russian.",
-    "motionTitle": "Remotion ready",
-    "motionDescription": "Video composition starter for launch clips, ads, social posts, and product demos.",
     "securityTitle": "Security patched",
     "securityDescription": "Latest packages, strict TypeScript, Biome checks, secure headers, no GraphQL/Apollo surface, and safe defaults.",
     "performanceTitle": "Optimized by default",
     "performanceDescription": "Server components, small client islands, strict env validation, request timeouts, and package import optimization.",
     "healthCardTitle": "API health",
     "healthCardDescription": "Use this route as deployment smoke test.",
-    "healthCardButton": "Open /api/health"
+    "healthCardButton": "Open /api/health",
+    "animationTitle": "Lightweight animations",
+    "animationDescription": "Motion-powered micro-interactions for polished UI with small client-side overhead."
   },
   "auth": {
     "statusTitle": "Auth session",
