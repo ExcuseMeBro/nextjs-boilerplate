@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "title": "Next.js Boilerplate",
+    "description": "Production-ready Next.js starter with REST, JWT auth, i18n, Biome, and Remotion."
+  },
+  "home": {
+    "badge": "Production starter",
+    "title": "Build fast, secure, multilingual apps.",
+    "subtitle": "Modern Next.js boilerplate with REST APIs, JWT-ready auth, i18n, Biome, secure defaults, and Remotion video tooling.",
+    "primaryAction": "Start building",
+    "secondaryAction": "View health check",
+    "stackTitle": "Included stack",
+    "qualityTitle": "Best-practice defaults",
+    "authTitle": "JWT-ready auth",
+    "authDescription": "HTTP-only token cookies, refresh flow hooks, server REST client, and client auth state are ready to connect to any backend.",
+    "restTitle": "REST-first API layer",
+    "restDescription": "Typed fetch wrapper with timeout, error normalization, locale headers, cache controls, and bearer token support.",
+    "i18nTitle": "i18n built in",
+    "i18nDescription": "Locale routing, aligned translations, metadata, and language switcher for English, Uzbek, and Russian.",
+    "motionTitle": "Remotion ready",
+    "motionDescription": "Video composition starter for launch clips, ads, social posts, and product demos.",
+    "securityTitle": "Security patched",
+    "securityDescription": "Latest packages, strict TypeScript, Biome checks, secure headers, no GraphQL/Apollo surface, and safe defaults.",
+    "performanceTitle": "Optimized by default",
+    "performanceDescription": "Server components, small client islands, strict env validation, request timeouts, and package import optimization.",
+    "healthCardTitle": "API health",
+    "healthCardDescription": "Use this route as deployment smoke test.",
+    "healthCardButton": "Open /api/health"
+  },
+  "auth": {
+    "statusTitle": "Auth session",
+    "loading": "Checking session...",
+    "signedOut": "No active session.",
+    "signedIn": "Signed in.",
+    "loginHint": "Connect POST /auth/login on your backend to enable this form.",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "loginButton": "Sign in",
+    "logoutButton": "Sign out",
+    "loginError": "Sign-in failed. Check API URL and credentials.",
+    "logoutError": "Sign-out failed. Try again.",
+    "requiredFields": "Email and password are required."
+  },
+  "client": {
+    "toastButton": "Show toast",
+    "toastMessage": "Everything is ready."
+  },
+  "common": {
+    "language": "Language",
+    "english": "English",
+    "uzbek": "O‘zbekcha",
+    "russian": "Русский",
+    "errorTitle": "Something went wrong.",
+    "errorDescription": "Refresh the page or try again later.",
+    "retry": "Try again",
+    "notFoundTitle": "Page not found.",
+    "notFoundDescription": "The page you are looking for does not exist.",
+    "goHome": "Go home",
+    "loading": "Loading..."
+  }
+}

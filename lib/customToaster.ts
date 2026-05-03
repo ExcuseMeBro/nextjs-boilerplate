@@ -1,5 +1,5 @@
-import {toast} from "sonner";
+import { toast } from "sonner";
 
-export function showToaster(massage: string, type?: string) {
-    toast(massage)
+export function showToaster(message: string) {
+  toast(message);
 }

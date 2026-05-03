@@ -35,10 +35,8 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-#lock files
-bun.lockb
-*.lock
-package-lock.json
+# lock files
+# Commit lockfiles for reproducible installs.
 
 #editor config folders
 .vscode
