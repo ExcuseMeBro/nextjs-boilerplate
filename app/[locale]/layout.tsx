@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Manrope, Oswald } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
@@ -9,9 +9,15 @@ import { cn } from "@/lib/utils";
 import { AppProviders } from "./providers";
 import "@/styles/globals.css";
 
-const fontSans = FontSans({
-  subsets: ["latin"],
+const fontSans = Manrope({
+  subsets: ["latin", "cyrillic"],
   variable: "--font-sans",
+  display: "swap",
+});
+
+const fontDisplay = Oswald({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-display",
   display: "swap",
 });
 
@@ -30,7 +36,12 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    metadataBase: new URL("https://example.com"),
+    icons: {
+      icon: "/icon.svg",
+      shortcut: "/icon.svg",
+      apple: "/icon.svg",
+    },
+    metadataBase: new URL("https://craftly.uz"),
     openGraph: {
       title: t("title"),
       description: t("description"),
@@ -57,7 +68,13 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable,
+          fontDisplay.variable,
+        )}
+      >
         <NextIntlClientProvider messages={messages}>
           <AppProviders>{children}</AppProviders>
         </NextIntlClientProvider>

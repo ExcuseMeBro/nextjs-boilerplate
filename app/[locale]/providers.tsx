@@ -1,6 +1,7 @@
 "use client";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { MotionConfig } from "motion/react";
 import { ThemeProvider } from "next-themes";
 import { useState } from "react";
 import { Toaster } from "@/components/ui/sonner";
@@ -22,10 +23,12 @@ export function AppProviders({ children }: React.PropsWithChildren) {
 
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-      <QueryClientProvider client={queryClient}>
-        <AuthProvider>{children}</AuthProvider>
-        <Toaster richColors closeButton />
-      </QueryClientProvider>
+      <MotionConfig reducedMotion="user">
+        <QueryClientProvider client={queryClient}>
+          <AuthProvider>{children}</AuthProvider>
+          <Toaster richColors closeButton />
+        </QueryClientProvider>
+      </MotionConfig>
     </ThemeProvider>
   );
 }

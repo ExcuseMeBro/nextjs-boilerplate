@@ -1,31 +1,125 @@
 {
   "metadata": {
-    "title": "Next.js Boilerplate",
-    "description": "Production-ready Next.js starter with REST, JWT auth, i18n, Biome, and lightweight animations."
+    "title": "Craftly — your business online in 10 minutes",
+    "description": "Craftly creates and launches websites, local payments, and SEO for local businesses in one flow."
   },
   "home": {
-    "badge": "Production starter",
-    "title": "Build fast, secure, multilingual apps.",
-    "subtitle": "Modern Next.js boilerplate with REST APIs, JWT-ready auth, i18n, Biome, secure defaults, and lightweight UI animations.",
-    "primaryAction": "Start building",
-    "secondaryAction": "View health check",
-    "stackTitle": "Included stack",
-    "qualityTitle": "Best-practice defaults",
-    "authTitle": "JWT-ready auth",
-    "authDescription": "HTTP-only token cookies, refresh flow hooks, server REST client, and client auth state are ready to connect to any backend.",
-    "restTitle": "REST-first API layer",
-    "restDescription": "Typed fetch wrapper with timeout, error normalization, locale headers, cache controls, and bearer token support.",
-    "i18nTitle": "i18n built in",
-    "i18nDescription": "Locale routing, aligned translations, metadata, and language switcher for English, Uzbek, and Russian.",
-    "securityTitle": "Security patched",
-    "securityDescription": "Latest packages, strict TypeScript, Biome checks, secure headers, no GraphQL/Apollo surface, and safe defaults.",
-    "performanceTitle": "Optimized by default",
-    "performanceDescription": "Server components, small client islands, strict env validation, request timeouts, and package import optimization.",
-    "healthCardTitle": "API health",
-    "healthCardDescription": "Use this route as deployment smoke test.",
-    "healthCardButton": "Open /api/health",
-    "animationTitle": "Lightweight animations",
-    "animationDescription": "Motion-powered micro-interactions for polished UI with small client-side overhead."
+    "nav": {
+      "how": "How it works",
+      "product": "Product",
+      "pricing": "Pricing",
+      "start": "Get started"
+    },
+    "hero": {
+      "eyebrow": "A digital start for local businesses",
+      "lineOne": "Your business.",
+      "lineTwo": "Online. In 10 minutes.",
+      "subtitle": "Craftly creates your website, connects local payments, and launches it ready for your next customer to find.",
+      "primaryAction": "Start your business",
+      "secondaryAction": "See how it works",
+      "promptLabel": "Your prompt",
+      "launchLabel": "Launch status",
+      "readyLabel": "Website is live"
+    },
+    "ticker": "From one prompt to a live business — in 10 minutes",
+    "problem": {
+      "eyebrow": "The problem",
+      "title": "Demand is there. Friction is the gap.",
+      "description": "High agency costs, slow delivery, and fragmented services keep small businesses invisible. Craftly turns them into one flow."
+    },
+    "stats": [
+      {
+        "value": "70%",
+        "label": "of small businesses in Uzbekistan are still not fully online"
+      },
+      {
+        "value": "84K+",
+        "label": "businesses operate without a website, search presence, or online payments"
+      },
+      {
+        "value": "10 min",
+        "label": "from prompt to a branded, mobile-ready, deployed website"
+      }
+    ],
+    "how": {
+      "eyebrow": "One flow",
+      "title": "You describe it. Craftly does the rest.",
+      "description": "No separate designer, developer, and SEO specialist. One prompt becomes one complete online business."
+    },
+    "steps": [
+      {
+        "title": "Prompt",
+        "description": "Describe your industry, style, and goal in one simple sentence."
+      },
+      {
+        "title": "Create",
+        "description": "AI agents write, design, and build every mobile-ready page."
+      },
+      {
+        "title": "Launch",
+        "description": "Go live with your domain, SEO, and local payments connected."
+      }
+    ],
+    "product": {
+      "eyebrow": "The product",
+      "title": "From prompt to a real website.",
+      "description": "Craftly does not stop at a mockup. It deploys a fast, sales-ready website you can actually manage.",
+      "live": "● LIVE",
+      "prompt": "Prompt",
+      "promptText": "Create a warm, premium website for a modern coffee shop in Tashkent.",
+      "checkOne": "Brand direction created",
+      "checkTwo": "Mobile pages ready",
+      "checkThree": "Connecting payments"
+    },
+    "benefitsSection": {
+      "eyebrow": "Why Craftly",
+      "title": "Local by design. Complete by default.",
+      "description": "Language, payments, and search work for Uzbekistan from day one."
+    },
+    "benefits": [
+      {
+        "title": "Live in 10 minutes",
+        "description": "No weeks of waiting. Content, design, and deployment happen in one flow."
+      },
+      {
+        "title": "Local payments built in",
+        "description": "Payme, Click, Uzum, SMS, and Telegram connect to the way your business works."
+      },
+      {
+        "title": "Ready to be found",
+        "description": "Technical SEO, metadata, sitemap, and Google Business launch together."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Simple pricing",
+      "title": "No pricing surprises.",
+      "description": "No agency markup or hidden extras. One setup fee, then one clear monthly price.",
+      "monthlyLabel": "Monthly service",
+      "month": "month",
+      "monthlyDescription": "Hosting, domain, updates, SEO, and ongoing support.",
+      "setupLabel": "One-time setup",
+      "setupDescription": "Paid when your website goes live.",
+      "speed": "Live in about 10 minutes",
+      "includedTitle": "Everything included",
+      "included": [
+        "Branded website",
+        "Mobile-ready pages",
+        "Domain and hosting",
+        "Local payments",
+        "Technical SEO",
+        "Updates and support"
+      ],
+      "action": "Get started"
+    },
+    "closing": {
+      "eyebrow": "It is time to get online",
+      "title": "Let your next customer find you.",
+      "description": "Tell us about your business. Craftly puts it online in about 10 minutes.",
+      "action": "Start with Craftly"
+    },
+    "footer": {
+      "tagline": "The online operating system for local businesses."
+    }
   },
   "auth": {
     "statusTitle": "Auth session",

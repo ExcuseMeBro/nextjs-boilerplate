@@ -34,6 +34,7 @@ export function LanguageSwitcher() {
       <span className="sr-only">{t("language")}</span>
       {routing.locales.map((locale) => (
         <Link
+          aria-label={t(localeLabels[locale])}
           className={cn(
             "rounded-full px-3 py-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
             activeLocale === locale &&
@@ -42,7 +43,7 @@ export function LanguageSwitcher() {
           href={getLocalizedPath(pathname, locale)}
           key={locale}
         >
-          {t(localeLabels[locale])}
+          {locale.toUpperCase()}
         </Link>
       ))}
     </div>

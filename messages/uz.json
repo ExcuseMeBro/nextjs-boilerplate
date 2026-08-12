@@ -1,31 +1,125 @@
 {
   "metadata": {
-    "title": "Next.js Boilerplate",
-    "description": "REST, JWT auth, i18n, Biome va lightweight animatsiyalar bilan ishlab chiqarishga tayyor Next.js starter."
+    "title": "Craftly — biznesingiz 10 daqiqada online",
+    "description": "Craftly mahalliy bizneslar uchun sayt, to‘lov va SEO’ni bir oqimda yaratadi va ishga tushiradi."
   },
   "home": {
-    "badge": "Production starter",
-    "title": "Tez, xavfsiz va ko‘p tilli ilova yarating.",
-    "subtitle": "REST API, JWT-ready auth, i18n, Biome, xavfsiz sozlamalar va lightweight UI animatsiyalar bilan zamonaviy Next.js boilerplate.",
-    "primaryAction": "Boshlash",
-    "secondaryAction": "Health check ko‘rish",
-    "stackTitle": "Ichidagi stack",
-    "qualityTitle": "Best-practice sozlamalar",
-    "authTitle": "JWT-ready auth",
-    "authDescription": "HTTP-only token cookie, refresh flow hook, server REST client va client auth state istalgan backendga ulashga tayyor.",
-    "restTitle": "REST-first API layer",
-    "restDescription": "Timeout, error normalization, locale header, cache control va bearer token support bilan typed fetch wrapper.",
-    "i18nTitle": "i18n tayyor",
-    "i18nDescription": "English, Uzbek va Russian uchun locale routing, mos tarjimalar, metadata va language switcher.",
-    "securityTitle": "Security patch qilingan",
-    "securityDescription": "Yangilangan paketlar, strict TypeScript, Biome checks, secure headers, GraphQL/Apollo yo‘q va safe defaults.",
-    "performanceTitle": "Default optimizatsiya",
-    "performanceDescription": "Server components, kichik client islands, strict env validation, request timeouts va package import optimization.",
-    "healthCardTitle": "API health",
-    "healthCardDescription": "Deploy smoke test uchun shu routedan foydalaning.",
-    "healthCardButton": "/api/health ochish",
-    "animationTitle": "Lightweight animatsiyalar",
-    "animationDescription": "Motion orqali silliq UI micro-interactionlar, kichik client-side overhead bilan."
+    "nav": {
+      "how": "Qanday ishlaydi",
+      "product": "Mahsulot",
+      "pricing": "Narxlar",
+      "start": "Boshlash"
+    },
+    "hero": {
+      "eyebrow": "Mahalliy bizneslar uchun raqamli start",
+      "lineOne": "Biznesingiz.",
+      "lineTwo": "Online. 10 daqiqada.",
+      "subtitle": "Craftly saytingizni yaratadi, mahalliy to‘lovlarni ulaydi va mijozlar topishi uchun tayyor holatda ishga tushiradi.",
+      "primaryAction": "Biznesni boshlash",
+      "secondaryAction": "Jarayonni ko‘rish",
+      "promptLabel": "Sizning promptingiz",
+      "launchLabel": "Ishga tushirish",
+      "readyLabel": "Sayt online"
+    },
+    "ticker": "Promptdan tayyor biznesgacha — 10 daqiqa",
+    "problem": {
+      "eyebrow": "Muammo",
+      "title": "Talab bor. To‘siq — murakkablik.",
+      "description": "Qimmat agentlik, uzoq muddat va bo‘lingan servislar kichik biznesni ko‘rinmas qoldiradi. Craftly buni bitta oqimga birlashtiradi."
+    },
+    "stats": [
+      {
+        "value": "70%",
+        "label": "O‘zbekistondagi kichik bizneslar hali ham to‘liq online emas"
+      },
+      {
+        "value": "84K+",
+        "label": "biznes sayt, qidiruv va online to‘lovsiz ishlamoqda"
+      },
+      {
+        "value": "10 min",
+        "label": "promptdan brendlangan, mobilga tayyor va ishga tushgan saytga"
+      }
+    ],
+    "how": {
+      "eyebrow": "Bitta oqim",
+      "title": "Siz aytasiz. Craftly qolganini bajaradi.",
+      "description": "Alohida dizayner, dasturchi va SEO mutaxassisi kerak emas. Bitta prompt — bitta tayyor online biznes."
+    },
+    "steps": [
+      {
+        "title": "Ayting",
+        "description": "Yo‘nalish, uslub va maqsadni oddiy bir jumlada yozing."
+      },
+      {
+        "title": "Yaratamiz",
+        "description": "AI agentlar matn, dizayn va mobilga mos sahifalarni tayyorlaydi."
+      },
+      {
+        "title": "Ishga tushamiz",
+        "description": "Domen, SEO va mahalliy to‘lovlar ulangan holda sayt online bo‘ladi."
+      }
+    ],
+    "product": {
+      "eyebrow": "Mahsulot",
+      "title": "Promptdan real saytga.",
+      "description": "Craftly shunchaki maket bermaydi. Siz boshqara oladigan, tez ishlaydigan va savdoga tayyor saytni deploy qiladi.",
+      "live": "● LIVE",
+      "prompt": "Prompt",
+      "promptText": "Toshkentdagi zamonaviy qahvaxona uchun iliq, premium sayt yarat.",
+      "checkOne": "Brend uslubi yaratildi",
+      "checkTwo": "Mobil sahifalar tayyor",
+      "checkThree": "To‘lovlar ulanmoqda"
+    },
+    "benefitsSection": {
+      "eyebrow": "Nega Craftly",
+      "title": "Mahalliy bo‘lish — bizning ustunligimiz.",
+      "description": "Til, to‘lov va qidiruv birinchi kundan O‘zbekiston bozori uchun ishlaydi."
+    },
+    "benefits": [
+      {
+        "title": "10 daqiqada tayyor",
+        "description": "Haftalab kutish yo‘q. Kontent, dizayn va deploy bir vaqtda bajariladi."
+      },
+      {
+        "title": "Mahalliy to‘lovlar",
+        "description": "Payme, Click, Uzum, SMS va Telegram biznesingizga mos oqimda ulanadi."
+      },
+      {
+        "title": "Topilishga tayyor",
+        "description": "Texnik SEO, metadata, sitemap va Google Business birgalikda ishga tushadi."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Oddiy narx",
+      "title": "Kutilmagan xarajatsiz.",
+      "description": "Agentlik marjasi va yashirin qo‘shimchalar yo‘q. Boshlash uchun bitta to‘lov, keyin aniq oylik narx.",
+      "monthlyLabel": "Oylik xizmat",
+      "month": "oy",
+      "monthlyDescription": "Hosting, domen, yangilanishlar, SEO va doimiy yordam.",
+      "setupLabel": "Bir martalik start",
+      "setupDescription": "Sayt online bo‘lganda to‘lanadi.",
+      "speed": "Taxminan 10 daqiqada live",
+      "includedTitle": "Hammasi ichida",
+      "included": [
+        "Brendlangan sayt",
+        "Mobil versiya",
+        "Domen va hosting",
+        "Mahalliy to‘lovlar",
+        "Texnik SEO",
+        "Yangilanish va yordam"
+      ],
+      "action": "Boshlash"
+    },
+    "closing": {
+      "eyebrow": "Online bo‘lish vaqti keldi",
+      "title": "Keyingi mijozingiz sizni topa olsin.",
+      "description": "Biznesingizni ayting. Craftly uni 10 daqiqada online olib chiqadi.",
+      "action": "Craftly bilan boshlash"
+    },
+    "footer": {
+      "tagline": "Mahalliy bizneslar uchun online operatsion tizim."
+    }
   },
   "auth": {
     "statusTitle": "Auth session",

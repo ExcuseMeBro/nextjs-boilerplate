@@ -1,31 +1,125 @@
 {
   "metadata": {
-    "title": "Next.js Boilerplate",
-    "description": "Готовый к production Next.js starter с REST, JWT auth, i18n, Biome и легкими анимациями."
+    "title": "Craftly — ваш бизнес онлайн за 10 минут",
+    "description": "Craftly создаёт и запускает сайты, локальные платежи и SEO для малого бизнеса в одном потоке."
   },
   "home": {
-    "badge": "Production starter",
-    "title": "Создавайте быстрые, безопасные и мультиязычные приложения.",
-    "subtitle": "Современный Next.js boilerplate с REST API, JWT-ready auth, i18n, Biome, безопасными настройками и легкими UI-анимациями.",
-    "primaryAction": "Начать",
-    "secondaryAction": "Проверить health check",
-    "stackTitle": "Стек внутри",
-    "qualityTitle": "Best-practice настройки",
-    "authTitle": "JWT-ready auth",
-    "authDescription": "HTTP-only token cookies, refresh flow hooks, server REST client и client auth state готовы к подключению к любому backend.",
-    "restTitle": "REST-first API layer",
-    "restDescription": "Typed fetch wrapper с timeout, error normalization, locale headers, cache controls и bearer token support.",
-    "i18nTitle": "i18n готов",
-    "i18nDescription": "Locale routing, синхронные переводы, metadata и language switcher для English, Uzbek и Russian.",
-    "securityTitle": "Security patch готов",
-    "securityDescription": "Обновленные пакеты, strict TypeScript, Biome checks, secure headers, без GraphQL/Apollo и с safe defaults.",
-    "performanceTitle": "Оптимизация по умолчанию",
-    "performanceDescription": "Server components, маленькие client islands, strict env validation, request timeouts и package import optimization.",
-    "healthCardTitle": "API health",
-    "healthCardDescription": "Используйте этот route как deployment smoke test.",
-    "healthCardButton": "Открыть /api/health",
-    "animationTitle": "Легкие анимации",
-    "animationDescription": "Micro-interactions на Motion для аккуратного UI с небольшим client-side overhead."
+    "nav": {
+      "how": "Как это работает",
+      "product": "Продукт",
+      "pricing": "Цены",
+      "start": "Начать"
+    },
+    "hero": {
+      "eyebrow": "Цифровой старт для локального бизнеса",
+      "lineOne": "Ваш бизнес.",
+      "lineTwo": "Онлайн. За 10 минут.",
+      "subtitle": "Craftly создаёт сайт, подключает локальные платежи и запускает всё готовым для следующего клиента.",
+      "primaryAction": "Запустить бизнес",
+      "secondaryAction": "Как это работает",
+      "promptLabel": "Ваш промпт",
+      "launchLabel": "Статус запуска",
+      "readyLabel": "Сайт онлайн"
+    },
+    "ticker": "От одного промпта до работающего бизнеса — за 10 минут",
+    "problem": {
+      "eyebrow": "Проблема",
+      "title": "Спрос есть. Мешает сложность.",
+      "description": "Высокая цена агентств, долгий запуск и разрозненные сервисы оставляют малый бизнес незаметным. Craftly объединяет всё в один процесс."
+    },
+    "stats": [
+      {
+        "value": "70%",
+        "label": "малых бизнесов Узбекистана всё ещё не представлены полноценно онлайн"
+      },
+      {
+        "value": "84K+",
+        "label": "компаний работают без сайта, поискового присутствия и онлайн-платежей"
+      },
+      {
+        "value": "10 мин",
+        "label": "от промпта до брендированного и готового к работе мобильного сайта"
+      }
+    ],
+    "how": {
+      "eyebrow": "Один процесс",
+      "title": "Вы описываете. Craftly делает остальное.",
+      "description": "Не нужны отдельные дизайнер, разработчик и SEO-специалист. Один промпт превращается в готовый онлайн-бизнес."
+    },
+    "steps": [
+      {
+        "title": "Опишите",
+        "description": "Расскажите о нише, стиле и цели одним простым предложением."
+      },
+      {
+        "title": "Создадим",
+        "description": "AI-агенты пишут тексты, создают дизайн и собирают мобильные страницы."
+      },
+      {
+        "title": "Запустим",
+        "description": "Сайт выходит онлайн с доменом, SEO и локальными платежами."
+      }
+    ],
+    "product": {
+      "eyebrow": "Продукт",
+      "title": "От промпта до реального сайта.",
+      "description": "Craftly не останавливается на макете. Вы получаете быстрый, управляемый сайт, готовый к продажам.",
+      "live": "● ОНЛАЙН",
+      "prompt": "Промпт",
+      "promptText": "Создай тёплый премиальный сайт для современной кофейни в Ташкенте.",
+      "checkOne": "Стиль бренда создан",
+      "checkTwo": "Мобильные страницы готовы",
+      "checkThree": "Подключаем платежи"
+    },
+    "benefitsSection": {
+      "eyebrow": "Почему Craftly",
+      "title": "Локальный по замыслу. Полный по умолчанию.",
+      "description": "Язык, платежи и поиск работают для рынка Узбекистана с первого дня."
+    },
+    "benefits": [
+      {
+        "title": "Онлайн за 10 минут",
+        "description": "Никаких недель ожидания. Контент, дизайн и запуск идут в одном процессе."
+      },
+      {
+        "title": "Локальные платежи",
+        "description": "Payme, Click, Uzum, SMS и Telegram подключаются под ваш бизнес."
+      },
+      {
+        "title": "Готов к поиску",
+        "description": "Техническое SEO, метаданные, sitemap и Google Business запускаются вместе."
+      }
+    ],
+    "pricing": {
+      "eyebrow": "Простая цена",
+      "title": "Без сюрпризов в счёте.",
+      "description": "Без наценки агентства и скрытых доплат. Один платёж за запуск и понятная цена в месяц.",
+      "monthlyLabel": "Ежемесячный сервис",
+      "month": "месяц",
+      "monthlyDescription": "Хостинг, домен, обновления, SEO и постоянная поддержка.",
+      "setupLabel": "Разовый запуск",
+      "setupDescription": "Оплачивается, когда сайт выходит онлайн.",
+      "speed": "Онлайн примерно за 10 минут",
+      "includedTitle": "Всё включено",
+      "included": [
+        "Брендированный сайт",
+        "Мобильные страницы",
+        "Домен и хостинг",
+        "Локальные платежи",
+        "Техническое SEO",
+        "Обновления и поддержка"
+      ],
+      "action": "Начать"
+    },
+    "closing": {
+      "eyebrow": "Пора выйти онлайн",
+      "title": "Пусть следующий клиент найдёт вас.",
+      "description": "Расскажите о бизнесе. Craftly запустит его онлайн примерно за 10 минут.",
+      "action": "Начать с Craftly"
+    },
+    "footer": {
+      "tagline": "Онлайн-операционная система для локального бизнеса."
+    }
   },
   "auth": {
     "statusTitle": "Auth session",
@@ -43,7 +137,7 @@
   },
   "client": {
     "toastButton": "Показать toast",
-    "toastMessage": "Все готово."
+    "toastMessage": "Всё готово."
   },
   "common": {
     "language": "Язык",
