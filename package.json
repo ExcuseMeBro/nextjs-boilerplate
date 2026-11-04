@@ -6,7 +6,8 @@
     "postcss": "^8.5.13"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
+    "dev:turbo": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "format": "biome format --write .",

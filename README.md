@@ -52,7 +52,8 @@ or
 ## Scripts
 
 ```bash
-bun dev          # local dev
+bun dev          # local dev with Webpack
+bun dev:turbo    # opt in to Turbopack
 bun build        # production build
 bun start        # run production build
 bun check        # Biome lint + format check
@@ -60,6 +61,12 @@ bun check:write  # auto-fix Biome issues
 bun typecheck    # TypeScript check
 bun audit        # dependency security audit
 ```
+
+Development explicitly uses Webpack as a workaround for reported high Turbopack
+memory usage. Next.js 16 defaults to Turbopack, so removing `--turbopack` alone does
+not switch bundlers. Stop the existing dev server before switching commands.
+Production build/start commands are unchanged. This workaround is not proof that
+an upstream memory leak has been fixed; see [memory comparison](docs/dev-memory.md).
 
 ## Project structure
 
