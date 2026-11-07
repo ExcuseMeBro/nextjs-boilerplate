@@ -26,7 +26,11 @@ export function extractTokens(payload: unknown): AuthTokens | null {
     tokenSource.accessToken ?? tokenSource.access_token ?? tokenSource.access ?? tokenSource.token;
   const refreshToken = tokenSource.refreshToken ?? tokenSource.refresh_token ?? tokenSource.refresh;
 
-  if (!accessToken) {
+  if (
+    typeof accessToken !== "string" ||
+    !accessToken.trim() ||
+    (refreshToken !== undefined && (typeof refreshToken !== "string" || !refreshToken.trim()))
+  ) {
     return null;
   }
 
