@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { ApiError } from "@/lib/api/types";
+import { authErrorResponse } from "@/lib/auth/errors";
 import { getServerSession } from "@/lib/auth/server";
 
 export async function GET(request: Request) {
@@ -13,10 +14,7 @@ export async function GET(request: Request) {
     return NextResponse.json(session);
   } catch (error) {
     if (error instanceof ApiError) {
-      return NextResponse.json(
-        { message: error.message, details: error.details },
-        { status: error.status },
-      );
+      return authErrorResponse(error);
     }
 
     return NextResponse.json({ message: "Unexpected session error." }, { status: 500 });

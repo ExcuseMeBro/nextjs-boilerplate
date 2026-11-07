@@ -16,8 +16,8 @@ Modern starter for real projects: secure, fast, multilingual, REST-first.
 ## Quick start
 
 ```bash
-bun install
-cp .env.example .env.local
+bun install --frozen-lockfile
+cp -n .env.example .env.local
 bun dev
 ```
 
@@ -60,6 +60,9 @@ bun check        # Biome lint + format check
 bun check:write  # auto-fix Biome issues
 bun typecheck    # TypeScript check
 bun audit        # dependency security audit
+bun run lint     # Biome lint (CI gate)
+bun run test     # Bun auth/API/provider tests + Python bootstrap tests
+bun run measure:production # after bun build: local HTTP/static-asset baseline
 ```
 
 Development explicitly uses Webpack as a workaround for reported high Turbopack
@@ -67,6 +70,58 @@ memory usage. Next.js 16 defaults to Turbopack, so removing `--turbopack` alone 
 not switch bundlers. Stop the existing dev server before switching commands.
 Production build/start commands are unchanged. This workaround is not proof that
 an upstream memory leak has been fixed; see [memory comparison](docs/dev-memory.md).
+
+## Bootstrap a new project
+
+Use Python 3.9+ (standard library only), from any working directory:
+
+```bash
+python3 scripts/bootstrap.py --name my-app --dry-run
+python3 scripts/bootstrap.py --name my-app
+bun install --frozen-lockfile
+bun run lint && bun run typecheck && bun run test && bun run build
+```
+
+`--name` is required: 1–64 lowercase ASCII letters/digits, starting with a letter,
+with single internal hyphens; `node`, `npm`, and `bun` are reserved. Scoped npm names,
+paths, whitespace, shell fragments and non-ASCII names are rejected. Next.js has no
+native application ID: only `package.json` and the root workspace name in `bun.lock`
+change. Branding, domains and translations stay yours to edit deliberately.
+
+The script validates both files before writes, rejects symlinks/hardlinks, preserves
+all other bytes, and is idempotent. Dry-run prints only the planned names/files.
+It never reads/writes `.env*`, generates secrets, installs packages, invokes a shell,
+or renames directories. Copy `.env.example` manually only if your target does not
+already exist (`cp -n` above). Each file replacement is atomic; the pair is not a
+filesystem transaction, so review both files after a disk/interruption failure.
+
+## Tests and CI
+
+Use Node **22.23.4**, Bun **1.4.4**, and Python **3.9+** (CI: **3.13**). The committed GitHub Actions
+workflow runs on pull requests and pushes to `dev`: frozen install, lint, typecheck,
+tests, production build, then production asset measurement. Cache keys include OS,
+architecture, both runtimes and `bun.lock`; cache hits never skip the frozen install.
+Actions are commit-pinned, checkout credentials are not persisted, permissions are
+read-only, and any failed command fails the job. No deployment or production secrets
+are used. The existing Google font build requires outbound access to Google Fonts.
+
+`bun run test` uses Bun’s built-in runner (no added test dependency). Auth handlers
+run against mocked `fetch` and `next/headers`, but the real API client, validation,
+token extraction and cookie helpers. Fixtures cover login, refresh rotation/fallback,
+logout, session normalization, unauthorized/input/upstream/network/timeout errors,
+and cookie flags. Configuration is overwritten with dummy test values before imports;
+no actual backend or credential is needed. Python tests use temporary copies and
+include invalid names, dry-run, repeat runs, untouched secret fixtures and link guards.
+Provider tests verify the SSR boundary and retained auth/query/reduced-motion context;
+they are not browser hydration/visual tests. Run production cookie-mode checks with
+`NODE_ENV=production bun --no-env-file test tests/auth-api.test.js`.
+
+Backend auth failures retain their HTTP status but return generic messages, never
+upstream diagnostic bodies. API-client errors remain typed internally. Backend token
+values must be non-empty strings before they can become auth cookies.
+
+See [production measurements](docs/production-performance.md) for the measured
+Motion feature split and its limits.
 
 ## Project structure
 

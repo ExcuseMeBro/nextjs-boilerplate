@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { serverApi } from "@/lib/api/client";
 import { ApiError } from "@/lib/api/types";
+import { authErrorResponse } from "@/lib/auth/errors";
 import { extractTokens, getRefreshToken, setAuthCookies } from "@/lib/auth/tokens";
 import { env } from "@/lib/config/env";
 
@@ -35,10 +36,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   } catch (error) {
     if (error instanceof ApiError) {
-      return NextResponse.json(
-        { message: error.message, details: error.details },
-        { status: error.status },
-      );
+      return authErrorResponse(error);
     }
 
     return NextResponse.json({ message: "Unexpected refresh error." }, { status: 500 });
